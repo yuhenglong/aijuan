@@ -2,172 +2,184 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title>可爱的小霭娟</title>
-	<script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-	<style>
-		html,body{
-			width:100%;
-			height:100%;
-			background:url('bg.jpg') no-repeat center center;
-			background-size:100% 100%;
-		}
-		*{
-			margin:0;
-			padding:0;
-		}
-		#preserve {
-			width: 400px;
-			height: 400px;
-			transform-style: preserve-3d;
-			position: fixed;
-			top: 0;
-			left: 0;
-			bottom:0;
-			right:0;
-			margin:auto;
-		}
-		.preserve{
-			animation: rotate 5s infinite linear;
-		}
-
-		.preserve_fast{
-			animation: rotate 3.5s infinite linear;
-		}
-
-		#preserve>div {
-			width: 400px;
-			height:400px;
-			position: absolute;
-			left: 0;
-			/* margin-left:-50%; */
-			top:0;
-			font-size: 160px;
-			line-height: 200px;
-			text-align: center;
-			/* opacity:0.5;
+    <meta charset="utf-8">
+    <title>一个憨憨</title>
+    <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        @media screen and (min-width: 200px) {
+            body {
+                background: url('bgt.jpg') no-repeat center center;
+                background-size: 100% 100%;
+            }
+        }
+        
+        @media screen and (min-width: 1200px) {
+            body {
+                background: url('bg.jpg') no-repeat center center;
+                background-size: 100% 100%;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #preserve {
+            width: 400px;
+            height: 400px;
+            transform-style: preserve-3d;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .preserve {
+            animation: rotate 5s infinite linear;
+        }
+        
+        .preserve_fast {
+            animation: rotate 3.5s infinite linear;
+        }
+        
+        #preserve>div {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left: 0;
+            /* margin-left:-50%; */
+            top: 0;
+            font-size: 160px;
+            line-height: 200px;
+            text-align: center;
+            /* opacity:0.5;
 	*/
-		}
-
-		.one {
-			transform: translateZ(200px);
-		}
-
-		.two {
-			transform: translateZ(-200px);
-		}
-
-		.three {
-			transform: rotateX(90deg) translateZ(200px);
-		}
-
-		.four {
-			transform: rotateX(90deg) translateZ(-200px);
-		}
-
-		.five {
-			transform: rotateY(90deg) translateZ(200px);
-		}
-
-		.six {
-			transform: rotateY(90deg) translateZ(-200px);
-		}
-
-
-		.one_bigger {
-			transform: translateZ(400px);
-			opacity: .9;
-		}
-
-		.two_bigger {
-			transform: translateZ(-400px);
-			opacity: .9;
-		}
-
-		.three_bigger {
-			transform: rotateX(90deg) translateZ(400px);
-			opacity: .9;
-		}
-
-		.four_bigger {
-			transform: rotateX(90deg) translateZ(-400px);
-			opacity: .9;
-		}
-
-		.five_bigger {
-			transform: rotateY(90deg) translateZ(400px);
-			opacity: .9;
-		}
-
-		.six_bigger {
-			transform: rotateY(90deg) translateZ(-400px);
-			opacity: .9;
-		}
-
-
-
-		.qq {
-			transform: rotateY(90deg);
-		}
-
-		.bb {
-			transform: rotateX(90deg);
-		}
-
-		@keyframes rotate {
-			0% {
-				transform: rotateY(0deg) rotateX(15deg);
-			}
-
-			100% {
-				transform: rotateY(360deg) rotateX(15deg);
-				;
-			}
-		}
-
-		img {
-			width: 100%;
-			height: 100%;
-		}
-	</style>
+        }
+        
+        .one {
+            transform: translateZ(200px);
+        }
+        
+        .two {
+            transform: translateZ(-200px);
+        }
+        
+        .three {
+            transform: rotateX(90deg) translateZ(200px);
+        }
+        
+        .four {
+            transform: rotateX(90deg) translateZ(-200px);
+        }
+        
+        .five {
+            transform: rotateY(90deg) translateZ(200px);
+        }
+        
+        .six {
+            transform: rotateY(90deg) translateZ(-200px);
+        }
+        
+        .one_bigger {
+            transform: translateZ(400px);
+            opacity: .9;
+        }
+        
+        .two_bigger {
+            transform: translateZ(-400px);
+            opacity: .9;
+        }
+        
+        .three_bigger {
+            transform: rotateX(90deg) translateZ(400px);
+            opacity: .9;
+        }
+        
+        .four_bigger {
+            transform: rotateX(90deg) translateZ(-400px);
+            opacity: .9;
+        }
+        
+        .five_bigger {
+            transform: rotateY(90deg) translateZ(400px);
+            opacity: .9;
+        }
+        
+        .six_bigger {
+            transform: rotateY(90deg) translateZ(-400px);
+            opacity: .9;
+        }
+        
+        .qq {
+            transform: rotateY(90deg);
+        }
+        
+        .bb {
+            transform: rotateX(90deg);
+        }
+        
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0deg) rotateX(15deg);
+            }
+            100% {
+                transform: rotateY(360deg) rotateX(15deg);
+                ;
+            }
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
-	<div id="preserve" class="preserve">
-		<div class="one"><img src="./image/timg.jpg" alt=""></div>
-		<div class="two"><img src="./image/timg.jpg" alt=""></div>
-		<div class="three"><img src="./image/timg.jpg" alt=""></div>
-		<div class="four"><img src="./image/timg.jpg" alt=""></div>
-		<div class="five"><img src="./image/timg.jpg" alt=""></div>
-		<div class="six"><img src="./image/timg.jpg" alt=""></div>
-		<div data-css="one"><img src="./image/timg.jpg" alt=""></div>
-		<div data-css="two"><img src="./image/timg.jpg" alt=""></div>
-		<div data-css="three"><img src="./image/timg.jpg" alt=""></div>
-		<div data-css="four"><img src="./image/timg.jpg" alt=""></div>
-		<div data-css="five"><img src="./image/timg.jpg" alt=""></div>
-		<div data-css="six"><img src="./image/timg.jpg" alt=""></div>
-		<!-- <div class="qq"></div>
+    <div id="preserve" class="preserve">
+        <div class="one"><img src="./image/timg.jpg" alt=""></div>
+        <div class="two"><img src="./image/timg.jpg" alt=""></div>
+        <div class="three"><img src="./image/timg.jpg" alt=""></div>
+        <div class="four"><img src="./image/timg.jpg" alt=""></div>
+        <div class="five"><img src="./image/timg.jpg" alt=""></div>
+        <div class="six"><img src="./image/timg.jpg" alt=""></div>
+        <div data-css="one"><img src="./image/timg.jpg" alt=""></div>
+        <div data-css="two"><img src="./image/timg.jpg" alt=""></div>
+        <div data-css="three"><img src="./image/timg.jpg" alt=""></div>
+        <div data-css="four"><img src="./image/timg.jpg" alt=""></div>
+        <div data-css="five"><img src="./image/timg.jpg" alt=""></div>
+        <div data-css="six"><img src="./image/timg.jpg" alt=""></div>
+        <!-- <div class="qq"></div>
 		<div class="bb"></div> -->
-	</div>
+    </div>
 
-	<script>
-		$(function () {
-			const animationFun = () => {
-				const others = $('[data-css]')
-				others.each(function () {
-					const _this = $(this)
-					const dataCss = _this.attr('data-css')
-					_this.addClass(`${dataCss}_bigger`)
-					_this[0].style.transition = '2s'
-				})
-				setTimeout(function(){
-					$('#preserve').addClass('preserve_fast')
-				}, 1500)
-			}
+    <script>
+        $(function() {
+            const animationFun = () => {
+                const others = $('[data-css]')
+                others.each(function() {
+                    const _this = $(this)
+                    const dataCss = _this.attr('data-css')
+                    _this.addClass(`${dataCss}_bigger`)
+                    _this[0].style.transition = '2s'
+                })
+                setTimeout(function() {
+                    $('#preserve').addClass('preserve_fast')
+                }, 1500)
+            }
 
-			setTimeout(animationFun, 5000)
-		})
-	</script>
+            setTimeout(animationFun, 5000)
+        })
+    </script>
 
 </body>
 
